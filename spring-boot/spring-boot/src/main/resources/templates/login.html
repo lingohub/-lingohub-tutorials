@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+  <title>Login Form</title>
+  <style>
+.content {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="content">
+  <h2>Login Page</h2><br>
+  <label><b>User Name
+  </b>
+  </label>
+  <input type="text" name="Uname" id="Uname" placeholder="Username">
+  <br><br>
+  <label><b>Password
+  </b>
+  </label>
+  <input type="Password" name="Pass" id="Pass" placeholder="Password">
+  <br><br>
+  <select name="language" id="language" path="localeCode">
+    <option value="null" selected disabled>Choose language...</option>
+    <option value="null">English</option>
+    <option value="null">German</option>
+  </select>
+  <br/>
+  <br/>
+  <input type="button" name="log" id="log" value="Log In Here"
+         onclick="loginFunction()">
+  <br><br>
+  <script>
+function loginFunction() {
+  index = document.getElementById("language").selectedIndex;
+
+  if (index == 1) {
+  window.location.href='http://localhost:8080/home?localeCode=en';
+}
+  if (index == 2) {
+  window.location.href='http://localhost:8080/home?localeCode=de';
+}
+}
+
+</script>
+</div>
+</body>
+</html>
