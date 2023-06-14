@@ -10,11 +10,11 @@ The tutorials are presented as blog posts. The blog posts usually include source
 --------------------------------
 Spring Boot Internationalization
 --------------------------------
-Blog post - 
-Source code -
+Blog post:
+Source code:
 
 --------------------------
 Java Internationalization
 --------------------------
-Blog post -
-Source code - 
+Blog post:
+Source code:
