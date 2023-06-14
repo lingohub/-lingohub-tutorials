@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- 1 -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+  <title th:text="#{welcome}"></title> <!-- 2 -->
+  <style>
+.content {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+  </style>
+</head>
+<body>
+<div class="content">
+  <br/>
+  <br/>
+  <span th:text="#{welcome}"></span><br>
+  <p th:text="#{text_segment}"></p>
+  <br/>
+  <br/>
+  <br><br>
+</div>
+</body>
+</html>
